@@ -29,7 +29,10 @@ public class Program2 {
 		System.out.println("Inserted! new Id = " + dep2.getId());
 		
 		System.out.println("\n=== TEST 4: department update ===");
-		
+		dep1 = departmentDao.fidById(6);
+		dep1.setName("Toys");
+		departmentDao.update(dep1);
+		System.out.println("Update Completed!");
 		
 		System.out.println("\n=== TEST 5: department delete ===");
 
